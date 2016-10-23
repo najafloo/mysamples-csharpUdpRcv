@@ -26,10 +26,16 @@ namespace recieveUdp
 
         public Form1()
         {
+            InitializeComponent();
+
+            notifyIcon1.Icon = recieveUdp.Properties.Resources.start;
+            notifyIcon1.Text = "وضعیت دستشویی";
+            
             Port = 5005;
+
             //Client uses as receive udp client
             _client = new UdpClient(Port);
-
+            
             try
             {
                 _client.BeginReceive(new AsyncCallback(recv), null);
@@ -39,11 +45,10 @@ namespace recieveUdp
             {
                 MessageBox.Show(e1.ToString());
             }
-            InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {         
             this.Hide();
         }
 
@@ -58,8 +63,8 @@ namespace recieveUdp
             byte[] received = _client.EndReceive(res, ref RemoteIpEndPoint);
 
             //Process codes
-            Console.Write(Encoding.UTF8.GetString(received));
-            //MessageBox.Show(Encoding.UTF8.GetString(received));
+            //Console.Write(Encoding.UTF8.GetString(received));
+
             _client.BeginReceive(new AsyncCallback(recv), null);
 
             title = "وضعیت دستشویی";
@@ -72,13 +77,18 @@ namespace recieveUdp
 
             if (body != null)
             {
-                if(body == "open")
-                    notifyIcon1.BalloonTipText = "اشغال است";
-
+                if (body == "open")
+                {
+                    notifyIcon1.Icon = recieveUdp.Properties.Resources.close;
+                    notifyIcon1.BalloonTipText = "اشغال شد";
+                }
                 else if (body == "close")
-                    notifyIcon1.BalloonTipText = "آزاد است";
+                {
+                    notifyIcon1.Icon = recieveUdp.Properties.Resources.open;
+                    notifyIcon1.BalloonTipText = "آزاد شد";
+                }
             }
-
+            
             notifyIcon1.ShowBalloonTip(30000);
             //_client.BeginReceive(new AsyncCallback(recv), null);
         }
