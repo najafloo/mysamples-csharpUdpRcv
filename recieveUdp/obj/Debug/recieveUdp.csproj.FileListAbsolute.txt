@@ -1,0 +1,9 @@
+E:\LINUXmount\recieveUdp\recieveUdp\bin\Debug\recieveUdp.exe.config
+E:\LINUXmount\recieveUdp\recieveUdp\bin\Debug\recieveUdp.exe
+E:\LINUXmount\recieveUdp\recieveUdp\bin\Debug\recieveUdp.pdb
+E:\LINUXmount\recieveUdp\recieveUdp\obj\Debug\recieveUdp.csprojResolveAssemblyReference.cache
+E:\LINUXmount\recieveUdp\recieveUdp\obj\Debug\recieveUdp.Form1.resources
+E:\LINUXmount\recieveUdp\recieveUdp\obj\Debug\recieveUdp.Properties.Resources.resources
+E:\LINUXmount\recieveUdp\recieveUdp\obj\Debug\recieveUdp.csproj.GenerateResource.Cache
+E:\LINUXmount\recieveUdp\recieveUdp\obj\Debug\recieveUdp.exe
+E:\LINUXmount\recieveUdp\recieveUdp\obj\Debug\recieveUdp.pdb
