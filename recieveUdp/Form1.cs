@@ -28,7 +28,7 @@ namespace recieveUdp
         {
             InitializeComponent();
 
-            notifyIcon1.Icon = recieveUdp.Properties.Resources.start;
+            notifyIcon1.Icon = atiwc.Properties.Resources.start;
             notifyIcon1.Text = "وضعیت دستشویی";
             
             Port = 5005;
@@ -79,17 +79,17 @@ namespace recieveUdp
             {
                 if (body == "open")
                 {
-                    notifyIcon1.Icon = recieveUdp.Properties.Resources.close;
-                    notifyIcon1.BalloonTipText = "اشغال شد";
+                    notifyIcon1.Icon = atiwc.Properties.Resources.close;
+                    //notifyIcon1.BalloonTipText = "اشغال شد";
                 }
                 else if (body == "close")
                 {
-                    notifyIcon1.Icon = recieveUdp.Properties.Resources.open;
-                    notifyIcon1.BalloonTipText = "آزاد شد";
+                    notifyIcon1.Icon = atiwc.Properties.Resources.open;
+                    //notifyIcon1.BalloonTipText = "آزاد شد";
                 }
             }
             
-            notifyIcon1.ShowBalloonTip(30000);
+            //notifyIcon1.ShowBalloonTip(30000);
             //_client.BeginReceive(new AsyncCallback(recv), null);
         }
     }

@@ -7,8 +7,8 @@
     <ProjectGuid>{E51C3E06-B9D1-4812-BED2-EBF69587E119}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>recieveUdp</RootNamespace>
-    <AssemblyName>recieveUdp</AssemblyName>
+    <RootNamespace>atiwc</RootNamespace>
+    <AssemblyName>atiwc-windows</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
